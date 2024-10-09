@@ -8,8 +8,8 @@ body, h1, h2, h3, p, ul, li, a {
 
 body {
     font-family: 'Montserrat', sans-serif;
-    background-color: #000; /* Set background to black */
-    color: #fff; /* Set text color to white */
+    background-color: #000; 
+    color: #fff; 
     line-height: 1.6;
 }
 
@@ -19,7 +19,7 @@ body {
     justify-content: space-between;
     align-items: center;
     padding: 20px 50px;
-    background-color: #111; /* Background for the header */
+    background-color: #111; 
 }
 
 .logo a {
@@ -40,14 +40,14 @@ body {
 }
 
 .nav-link:hover {
-    color: #FF00FF; /* Magenta color on hover */
+    color: #FF00FF; 
 }
 
 /* Buttons */
 .button {
     padding: 15px 30px;
-    border: 2px solid #FF00FF; /* Magenta border */
-    color: #FF00FF; /* Magenta text color */
+    border: 2px solid #FF00FF; 
+    color: #FF00FF; 
     font-size: 16px;
     font-weight: 500;
     margin: 10px;
