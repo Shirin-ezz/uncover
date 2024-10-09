@@ -3,43 +3,100 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Band Members - UnCover Stars</title>
+    <meta name="description" content="Meet the talented all-female band members of UnCover Stars.">
+    <title>Band - UnCover Stars</title>
     <link href="styles.css" rel="stylesheet"> <!-- External stylesheet link -->
+    <!-- Internal CSS for Band Page -->
     <style>
-        .band-members {
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f5f5f5;
+            color: #333;
+            padding: 20px;
+            margin: 0;
+        }
+
+        .header {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 20px 50px;
+            background-color: #111;
+            color: #fff;
+        }
+
+        .logo a {
+            color: #fff;
+            font-size: 24px;
+            font-weight: 700;
+            text-decoration: none;
+        }
+
+        .nav {
+            display: flex;
+            gap: 30px;
+        }
+
+        .nav-link {
+            font-size: 16px;
+            font-weight: 400;
+            color: #fff;
+            text-decoration: none;
+        }
+
+        .nav-link:hover {
+            color: #FF00FF;
+        }
+
+        .band-container {
+            width: 80%;
+            margin: 30px auto;
+            padding: 20px;
+            background: #fff;
+            border-radius: 8px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        }
+
+        h1, h2 {
+            text-align: center;
+            margin-bottom: 20px;
+        }
+
+        .members {
             display: flex;
             flex-wrap: wrap;
             justify-content: space-around;
-            margin: 50px 0;
+            gap: 20px;
         }
-        .member-card {
-            width: 250px;
-            background-color: #333;
-            color: #fff;
-            margin: 20px;
-            padding: 20px;
-            border-radius: 8px;
+
+        .member {
+            width: 200px;
             text-align: center;
-            transition: transform 0.3s ease-in-out;
+            background: #f1f1f1;
+            border-radius: 8px;
+            padding: 15px;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+            transition: transform 0.3s ease;
         }
-        .member-card:hover {
+
+        .member:hover {
             transform: scale(1.05);
         }
-        .member-image {
+
+        .member img {
             width: 100%;
-            height: 200px;
-            object-fit: cover;
-            border-radius: 8px;
+            border-radius: 50%;
             margin-bottom: 15px;
         }
-        .member-name {
-            font-size: 20px;
-            font-weight: 700;
-            margin-bottom: 10px;
+
+        .member h3 {
+            margin: 10px 0;
+            font-size: 18px;
         }
-        .member-bio {
-            font-size: 16px;
-            line-height: 1.6;
+
+        .member p {
+            font-size: 14px;
+            color: #777;
         }
     </style>
 </head>
@@ -55,19 +112,42 @@
             <a href="contact.html" class="nav-link">Contact</a>
         </nav>
     </header>
-    
 
-    <section class="band-members">
-        <div class="member-card">
-            <img src="images/member1.jpg" alt="Band Member 1" class="member-image">
-            <div class="member-name">John Doe</div>
-            <p class="member-bio">John is the lead vocalist and guitarist, bringing the soulful voice and powerful performance to the band.</p>
+    <div class="band-container">
+        <h1>Meet the Band</h1>
+        <p>Introducing the talented and inspiring members of UnCover Stars. Each one brings their unique style and charisma to the stage, making this all-female band a powerhouse of musical talent.</p>
+        <div class="members">
+            <!-- Member 1 -->
+            <div class="member">
+                <img src="images/member1.jpg" alt="Member 1">
+                <h3>Emma Stone</h3>
+                <p>Lead Vocals</p>
+            </div>
+            <!-- Member 2 -->
+            <div class="member">
+                <img src="images/member2.jpg" alt="Member 2">
+                <h3>Sophia Miller</h3>
+                <p>Guitarist</p>
+            </div>
+            <!-- Member 3 -->
+            <div class="member">
+                <img src="images/member3.jpg" alt="Member 3">
+                <h3>Ava Johnson</h3>
+                <p>Drummer</p>
+            </div>
+            <!-- Member 4 -->
+            <div class="member">
+                <img src="images/member4.jpg" alt="Member 4">
+                <h3>Olivia Brown</h3>
+                <p>Bassist</p>
+            </div>
+            <!-- New Member 5 -->
+            <div class="member">
+                <img src="images/member5.jpg" alt="Member 5">
+                <h3>Isabella Davis</h3>
+                <p>Keyboardist</p>
+            </div>
         </div>
-        <div class="member-card">
-            <img src="images/member2.jpg" alt="Band Member 2" class="member-image">
-            <div class="member-name">Jane Smith</div>
-            <p class="member-bio">Jane is the drummer, setting the beat and keeping the rhythm alive at every performance.</p>
-        </div>
-    </section>
+    </div>
 </body>
 </html>
