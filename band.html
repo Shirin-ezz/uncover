@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Band Members - UnCover Stars</title>
+    <link href="styles.css" rel="stylesheet"> <!-- External stylesheet link -->
+    <style>
+        .band-members {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-around;
+            margin: 50px 0;
+        }
+        .member-card {
+            width: 250px;
+            background-color: #333;
+            color: #fff;
+            margin: 20px;
+            padding: 20px;
+            border-radius: 8px;
+            text-align: center;
+            transition: transform 0.3s ease-in-out;
+        }
+        .member-card:hover {
+            transform: scale(1.05);
+        }
+        .member-image {
+            width: 100%;
+            height: 200px;
+            object-fit: cover;
+            border-radius: 8px;
+            margin-bottom: 15px;
+        }
+        .member-name {
+            font-size: 20px;
+            font-weight: 700;
+            margin-bottom: 10px;
+        }
+        .member-bio {
+            font-size: 16px;
+            line-height: 1.6;
+        }
+    </style>
+</head>
+<body>
+    <header class="header">
+        <div class="logo"><a href="index.html">UNCOVER STARS</a></div>
+        <nav class="nav">
+            <a href="index.html" class="nav-link">Home</a>
+            <a href="band.html" class="nav-link">Band</a>
+            <a href="music.html" class="nav-link">Music</a>
+            <a href="events.html" class="nav-link">Events</a>
+            <a href="contact.html" class="nav-link">Contact</a>
+        </nav>
+    </header>
+
+    <section class="band-members">
+        <div class="member-card">
+            <img src="images/member1.jpg" alt="Band Member 1" class="member-image">
+            <div class="member-name">John Doe</div>
+            <p class="member-bio">John is the lead vocalist and guitarist, bringing the soulful voice and powerful performance to the band.</p>
+        </div>
+        <div class="member-card">
+            <img src="images/member2.jpg" alt="Band Member 2" class="member-image">
+            <div class="member-name">Jane Smith</div>
+            <p class="member-bio">Jane is the drummer, setting the beat and keeping the rhythm alive at every performance.</p>
+        </div>
+    </section>
+</body>
+</html>
